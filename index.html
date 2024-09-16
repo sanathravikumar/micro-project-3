@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/external-flat-icons-inmotus-design/100/external-Calculator-calculator-flat-icons-inmotus-design-11.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <p>calc</p>
+      <input class="js-display display" readonly />
+
+      <div class="calculator">
+        <div class="buttons">
+          <button onclick="display('7')">7</button>
+          <button onclick="display(`8`)">8</button>
+          <button onclick="display(`9`)">9</button>
+          <button id="del" onclick="deletButton()">DEL</button>
+          <button onclick="display(`4`)">4</button>
+          <button onclick="display(`5`)">5</button>
+          <button onclick="display(`6`)">6</button>
+          <button onclick="display(`+`)">+</button>
+          <button onclick="display(`1`)">1</button>
+          <button onclick="display(`2`)">2</button>
+          <button onclick="display(`3`)">3</button>
+          <button onclick="display(`-`)">-</button>
+          <button onclick="display(`.`)">.</button>
+          <button onclick="display(`0`)">0</button>
+          <button onclick="display(`/`)">/</button>
+          <button onclick="display(`x`)">X</button>
+        </div>
+
+        <div class="button-reset-calc">
+          <button id="reset" onclick="resetDisplay()">RESET</button>
+          <button id="calc" ondblclick="dbl()" onclick="calc()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
